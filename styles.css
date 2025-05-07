@@ -1,0 +1,112 @@
+/* styles/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f0ed;
+    color: #222;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  .hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: rgb(11, 11, 11);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .about, .features, .featured, .event-list, main {
+    padding: 20px;
+  }
+  
+  .features ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .menu-table th, .menu-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .menu-table tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  .map-placeholder {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .map-placeholder img {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .hero {
+      padding: 40px 10px;
+    }
+  }
+  
